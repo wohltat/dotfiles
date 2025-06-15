@@ -6,7 +6,7 @@
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule "yazi/.config/yazi/plugins/bat.yazi"]
 	path = yazi/.config/yazi/plugins/bat.yazi
-	url = https://github.com/mgumz/yazi-plugin-bat.git
+	url = https://github.com/wohltat/yazi-plugin-bat.git
 [submodule "yazi/.config/yazi/plugins/bookmarks.yazi"]
 	path = yazi/.config/yazi/plugins/bookmarks.yazi
 	url = https://github.com/dedukun/bookmarks.yazi.git
