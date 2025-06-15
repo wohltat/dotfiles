@@ -1,3 +1,9 @@
 [submodule "kitty/.config/kitty/kitty-themes"]
 	path = kitty/.config/kitty/kitty-themes
-	url = https://github.com/user/kitty-themes.git
+	url = https://github.com/dexpota/kitty-themes.git
+[submodule "omz/.oh-my-zsh"]
+	path = omz/.oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "yazi/.config/yazi/plugins/bat.yazi"]
+	path = yazi/.config/yazi/plugins/bat.yazi
+	url = https://github.com/mgumz/yazi-plugin-bat.git
