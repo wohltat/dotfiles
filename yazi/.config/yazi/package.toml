@@ -1,0 +1,17 @@
+[[plugin.deps]]
+use = "Reledia/hexyl"
+rev = "39d3d4e"
+hash = "dd624cbaff94af65f39fd86bc57b340"
+
+[[plugin.deps]]
+use = "dedukun/bookmarks"
+rev = "202e450"
+hash = "9e2f6f7381542d3adb3080b394b431b4"
+
+[[plugin.deps]]
+use = "Ape/reflink"
+rev = "34902d3"
+hash = "f0c718e6cfb12f292af6a027a86713c2"
+
+[flavor]
+deps = []

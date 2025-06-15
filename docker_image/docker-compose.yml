@@ -1,0 +1,7 @@
+services:
+  app:
+    image: meinjaro 
+    container_name: meinjaro
+    command: sleep infinity 
+    volumes:
+      - ~/.dotfiles:/root/.dotfiles

@@ -1,0 +1,1 @@
+docker build -t meinjaro -f ./Dockerfile $HOME
