@@ -10,3 +10,21 @@
 [submodule "yazi/.config/yazi/plugins/bookmarks.yazi"]
 	path = yazi/.config/yazi/plugins/bookmarks.yazi
 	url = https://github.com/dedukun/bookmarks.yazi.git
+[submodule "tmux/.config/tmux/plugins/tpm"]
+	path = tmux/.config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "yazi/.config/yazi/plugins/bypass.yazi"]
+	path = yazi/.config/yazi/plugins/bypass.yazi
+	url = https://github.com/Rolv-Apneseth/bypass.yazi.git
+[submodule "yazi/.config/yazi/plugins/current-size.yazi"]
+	path = yazi/.config/yazi/plugins/current-size.yazi
+	url = https://gitee.com/DreamMaoMao/current-size.yazi.git
+[submodule "yazi/.config/yazi/plugins/hexyl.yazi"]
+	path = yazi/.config/yazi/plugins/hexyl.yazi
+	url = https://github.com/Reledia/hexyl.yazi.git
+[submodule "yazi/.config/yazi/plugins/ouch.yazi"]
+	path = yazi/.config/yazi/plugins/ouch.yazi
+	url = https://github.com/ndtoan96/ouch.yazi.git
+[submodule "yazi/.config/yazi/plugins/searchjump.yazi"]
+	path = yazi/.config/yazi/plugins/searchjump.yazi
+	url = https://github.com/qsdrqs/searchjump.yazi.git
