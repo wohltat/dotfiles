@@ -27,4 +27,4 @@
 	url = https://github.com/ndtoan96/ouch.yazi.git
 [submodule "yazi/.config/yazi/plugins/searchjump.yazi"]
 	path = yazi/.config/yazi/plugins/searchjump.yazi
-	url = https://github.com/qsdrqs/searchjump.yazi.git
+	url = https://gitee.com/DreamMaoMao/searchjump.yazi.git
