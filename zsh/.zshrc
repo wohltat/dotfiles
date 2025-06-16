@@ -81,8 +81,6 @@ plugins=(
   python
   pip
   man
-  adb
-  fd
   ant
   golang
   nmap
