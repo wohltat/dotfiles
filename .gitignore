@@ -1,3 +1,6 @@
 temp/
 yazi/.config/yazi/keymap_c.toml
 .Trash*
+tmux/.config/tmux/plugins/tmux
+tmux/.config/tmux/plugins/tmux-yank
+tmux/.config/tmux/plugins/vim-tmux-navigator
