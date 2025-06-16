@@ -13,6 +13,9 @@ RUN sed -i "s|^#Color$|Color|" /etc/pacman.conf
 WORKDIR /root/.dotfiles
 RUN stow zsh && stow bash && stow yazi && stow tmux && stow nvim
 
+# initialize tmux / install plugins via tpm
+RUN tmux/.config/tmux/plugins/tpm/scripts/install_plugins.sh
+
 # sync nvim first time
 RUN nvim --headless "+Lazy! sync" +qa
 # run for some time to finish remaining treesitter install steps (workaround)
@@ -21,7 +24,6 @@ RUN tmux new-session -s nvim_first_install -d 'nvim' && sleep 15 && tmux kill-se
 # make nvim symlinks
 RUN ln -s /usr/bin/nvim /usr/bin/vi 
 RUN ln -s /usr/bin/nvim /usr/bin/vim
-
 
 # RUN useradd -m username && \
 #     passwd -d username && \
