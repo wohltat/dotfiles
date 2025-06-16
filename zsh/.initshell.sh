@@ -17,7 +17,9 @@ alias ccat='pygmentize -O style=monokai -f console256 -g'
 alias dfd='df --type btrfs --type ext4 --type ext3 --type ext2 --type vfat --type iso9660 -h'
 # alias bat='bat --pager="less -r"'
 alias bat='bat --pager="less -r"'
-alias cls='printf "\033c"'
+alias cls='printf "\033c"' # clear screen
+alias lzd=lazydocker
+alias lzg=lazygit
 
 # disable autocorrect
 # alias sed='nocorrect sed'
