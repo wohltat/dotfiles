@@ -1,0 +1,1 @@
+keyboard.send_keys("<f5>",send_mode=keyboard.SendMode.KEYBOARD)

@@ -1,0 +1,1 @@
+keyboard.send_keys("<left>",send_mode=keyboard.SendMode.KEYBOARD) 

@@ -1,0 +1,1 @@
+keyboard.send_keys("<delete>",send_mode=keyboard.SendMode.KEYBOARD)

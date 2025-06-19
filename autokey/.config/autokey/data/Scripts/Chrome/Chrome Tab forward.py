@@ -1,0 +1,1 @@
+keyboard.send_keys("<ctrl>+<tab>",send_mode=keyboard.SendMode.KEYBOARD)

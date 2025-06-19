@@ -1,0 +1,23 @@
+{
+    "type": "folder",
+    "title": "standard navigation keys",
+    "modes": [],
+    "usageCount": 6738,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "filter": {
+        "regex": "(nemo.Nemo)|(chromium.Chromium)|(Navigator.Firefox)|(autokey-qt.autokey-qt)|(autokey-gtk.Autokey-gtk)|(FreeCADLink.FreeCAD Link Branch)|(arduino ide.Arduino IDE)|(signal.Signal)|(sublime_text.Sublime_text)|(lmms.lmms)|(org.gnome.Evolution.Org.gnome.Evolution)",
+        "isRecursive": true
+    }
+}

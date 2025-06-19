@@ -1,0 +1,1 @@
+keyboard.send_keys("<shift>+<right>",send_mode=keyboard.SendMode.KEYBOARD)

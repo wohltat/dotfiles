@@ -1,0 +1,1 @@
+keyboard.send_keys("<shift>+<f3>",send_mode=keyboard.SendMode.KEYBOARD)

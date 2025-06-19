@@ -1,0 +1,1 @@
+keyboard.send_keys(Key.F3,send_mode=keyboard.SendMode.KEYBOARD)

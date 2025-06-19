@@ -1,0 +1,1 @@
+keyboard.send_keys("<ctrl>+<page_up>",send_mode=keyboard.SendMode.KEYBOARD)

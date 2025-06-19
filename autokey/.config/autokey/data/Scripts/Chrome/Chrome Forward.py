@@ -1,0 +1,1 @@
+keyboard.send_keys("<alt>+<right>",send_mode=keyboard.SendMode.KEYBOARD)

@@ -1,0 +1,1 @@
+keyboard.send_keys("<end>",send_mode=keyboard.SendMode.KEYBOARD)
