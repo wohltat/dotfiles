@@ -26,6 +26,10 @@ end, 500, Status.RIGHT)
 -- show symlink in status bar
 function Status:name()
 	local h = cx.active.current.hovered
+	if not h then
+		return ui.Line(" ") -- Return empty or default text when no file is hovered
+	end
+
 	local linked = ""
 	if h.link_to ~= nil then
 		linked = " -> " .. tostring(h.link_to)

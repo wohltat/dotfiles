@@ -2,7 +2,7 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
-[manager]
+[mgr]
 ratio          = [ 1, 4, 3 ]
 sort_by        = "alphabetical"
 sort_sensitive = false
@@ -135,6 +135,17 @@ previewers = [
 	{ name = "*", run = "file" },
 ]
 
+prepend_preloaders = [
+  # 3d objects
+  { name = "*.3mf", run = "f3d-preview" },
+  { name = "*.obj", run = "f3d-preview" },
+  { name = "*.pts", run = "f3d-preview" },
+  { name = "*.ply", run = "f3d-preview" },
+  { name = "*.stl", run = "f3d-preview" },
+  { name = "*.step", run = "f3d-preview" },
+  { name = "*.stp", run = "f3d-preview" },
+]
+
 prepend_previewers = [
 	# Archive previewer
 	{ mime = "application/zip",            run = "ouch" },
@@ -146,6 +157,16 @@ prepend_previewers = [
 	{ mime = "application/x-xz",            run = "ouch" },
 	# Open office documents
 	{ mime = "application/vnd.oasis.opendocument.spreadsheet", run = "odt" },
+	# 3d objects
+  { name = "*.3mf", run = "f3d-preview" },
+  { name = "*.obj", run = "f3d-preview" },
+  { name = "*.pts", run = "f3d-preview" },
+  { name = "*.ply", run = "f3d-preview" },
+  { name = "*.stl", run = "f3d-preview" },
+  { name = "*.step", run = "f3d-preview" },
+  { name = "*.stp", run = "f3d-preview" },
+	#  { name = "*.stl", run = "thumbnail" },
+	# { name = "*.step", run = "thumbnail" },
 ]
 
 # append_previewers = [

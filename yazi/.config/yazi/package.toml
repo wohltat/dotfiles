@@ -13,5 +13,10 @@ use = "Ape/reflink"
 rev = "34902d3"
 hash = "f0c718e6cfb12f292af6a027a86713c2"
 
+[[plugin.deps]]
+use = "ruudjhuu/f3d-preview"
+rev = "f498e1b"
+hash = "93dc2231626ba213c30b9a6d48a776b2"
+
 [flavor]
 deps = []
