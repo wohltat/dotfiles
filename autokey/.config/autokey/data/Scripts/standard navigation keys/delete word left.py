@@ -1,0 +1,1 @@
+keyboard.send_keys("<ctrl>+<backspace>",send_mode=keyboard.SendMode.KEYBOARD)

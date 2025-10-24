@@ -2,7 +2,7 @@
     "type": "folder",
     "title": "Firefox",
     "modes": [],
-    "usageCount": 0,
+    "usageCount": 35,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -17,7 +17,7 @@
         "hotKey": null
     },
     "filter": {
-        "regex": "Navigator.Firefox",
+        "regex": "Navigator.[fF]irefox",
         "isRecursive": true
     }
 }

@@ -1,6 +1,6 @@
 {
     "type": "script",
-    "description": "Forward",
+    "description": "select word",
     "store": {},
     "modes": [
         3
@@ -19,10 +19,9 @@
     },
     "hotkey": {
         "modifiers": [
-            "<alt>",
-            "<shift>"
+            "<ctrl>"
         ],
-        "hotKey": "<backspace>"
+        "hotKey": "d"
     },
     "filter": {
         "regex": null,

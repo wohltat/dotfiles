@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "delete",
+    "description": "move word backward",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 89,
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -19,12 +19,13 @@
     },
     "hotkey": {
         "modifiers": [
-            "<alt>"
+            "<alt>",
+            "<ctrl>"
         ],
-        "hotKey": "d"
+        "hotKey": "h"
     },
     "filter": {
-        "regex": null,
+        "regex": "Telegram.TelegramDesktop",
         "isRecursive": false
     }
 }

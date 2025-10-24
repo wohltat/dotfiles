@@ -2,7 +2,7 @@
     "type": "folder",
     "title": "standard navigation keys",
     "modes": [],
-    "usageCount": 6738,
+    "usageCount": 13533,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -17,7 +17,7 @@
         "hotKey": null
     },
     "filter": {
-        "regex": "(nemo.Nemo)|(chromium.Chromium)|(Navigator.Firefox)|(autokey-qt.autokey-qt)|(autokey-gtk.Autokey-gtk)|(FreeCADLink.FreeCAD Link Branch)|(arduino ide.Arduino IDE)|(signal.Signal)|(sublime_text.Sublime_text)|(lmms.lmms)|(org.gnome.Evolution.Org.gnome.Evolution)",
+        "regex": "(nemo.Nemo)|(chromium.Chromium)|(Navigator.[Ff]irefox)|(autokey-qt.autokey-qt)|(autokey-gtk.Autokey-gtk)|(FreeCADLink.FreeCAD Link Branch)|(arduino ide.Arduino IDE)|(signal.Signal)|(lmms.lmms)|(org.gnome.Evolution.Org.gnome.Evolution)|(thonny.Thonny)|(libreoffice.libreoffice-writer)|(kile.kile)|(Nautilus)",
         "isRecursive": true
     }
 }

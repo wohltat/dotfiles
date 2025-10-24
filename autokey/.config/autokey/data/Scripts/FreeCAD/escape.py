@@ -1,0 +1,1 @@
+keyboard.send_keys("<escape>",send_mode=keyboard.SendMode.KEYBOARD)

@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "delete",
+    "description": "move bottom",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 89,
+    "usageCount": 68,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -21,7 +21,7 @@
         "modifiers": [
             "<alt>"
         ],
-        "hotKey": "d"
+        "hotKey": "e"
     },
     "filter": {
         "regex": null,

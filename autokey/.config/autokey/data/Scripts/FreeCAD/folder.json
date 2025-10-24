@@ -2,7 +2,7 @@
     "type": "folder",
     "title": "FreeCAD",
     "modes": [],
-    "usageCount": 0,
+    "usageCount": 85,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -17,7 +17,7 @@
         "hotKey": null
     },
     "filter": {
-        "regex": null,
+        "regex": "(FreeCADLink.FreeCAD Link Branch)|(openttd.openttd)",
         "isRecursive": false
     }
 }

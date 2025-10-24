@@ -1,6 +1,6 @@
 {
     "type": "script",
-    "description": "move botton",
+    "description": "select word left",
     "store": {},
     "modes": [
         3
@@ -19,9 +19,11 @@
     },
     "hotkey": {
         "modifiers": [
-            "<alt>"
+            "<alt>",
+            "<ctrl>",
+            "<shift>"
         ],
-        "hotKey": "e"
+        "hotKey": "h"
     },
     "filter": {
         "regex": null,

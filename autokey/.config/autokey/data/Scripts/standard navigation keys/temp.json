@@ -20,7 +20,7 @@
         "hotKey": null
     },
     "filter": {
-        "regex": null,
+        "regex": "libreoffice.libreoffice-writer",
         "isRecursive": false
     }
 }
