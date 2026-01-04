@@ -93,7 +93,7 @@ plugins=(
   svn
   tmux
   fzf
-  lxd-completion-zsh
+  # lxd-completion-zsh
 )
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.initshell.sh ] && source ~/.initshell.sh
@@ -142,7 +142,7 @@ bindkey '^s' prepend-sudo
 bindkey '^[h' backward-char
 bindkey '^[l' forward-char
 bindkey '^[k' up-line-or-history
-bindkey '^[j' down-history
+bindkey '^[j' down-line-or-history
 
 bindkey '^[m' delete-char 
 bindkey '^[n' backward-delete-char 
@@ -241,3 +241,16 @@ setopt GLOB_COMPLETE   # Trigger the completion after a glob * instead of expand
 unalias tmux 2>/dev/null
 # unset -f tmux 2>/dev/null
 
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba shell init' !!
+export MAMBA_EXE='/opt/miniforge/bin/mamba';
+export MAMBA_ROOT_PREFIX='/opt/miniforge';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias mamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
