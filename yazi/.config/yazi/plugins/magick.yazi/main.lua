@@ -20,7 +20,7 @@ function M:preload()
 		return 1
 	end
 
-	local child, code = Command("convert"):args({
+	local child, code = Command("convert"):arg({
 		"-density",
 		"200",
 		"-resize",
@@ -41,3 +41,4 @@ function M:preload()
 end
 
 return M
+
