@@ -14,4 +14,19 @@ nvim --headless "+Lazy! sync" +qa
 # fd - better find alternative
 # rg - ripgrep, grep alternative
 # gcc - might be necessary for nvim/treesitter
-
+#
+# neovim-symlinks # removes vi
+# stow omz
+#
+# necessary:
+# stow
+# node
+# kitty
+# autokey-gtk  # wayland has to be disabled, e.g. in /etc/gdm/custom.conf
+# extra/ttf-hack-nerd # or some other nerd font for symbols in nvim 
+#
+# [oh-my-zsh] plugin 'zsh-syntax-highlighting' not found
+# [oh-my-zsh] plugin 'zsh-autosuggestions' not found
+# [oh-my-zsh] plugin 'lxd-completion-zsh' not found
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
