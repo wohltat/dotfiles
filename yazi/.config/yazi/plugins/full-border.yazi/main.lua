@@ -11,19 +11,17 @@ local function setup(_, opts)
 			end
 
 			return ui.Bar(ui.Edge.TOP)
-				:area(ui.Rect({
-					x = x,
-					y = math.max(0, y),
-					w = ya.clamp(0, self._area.w - x, 1),
-					h = math.min(1, self._area.h),
-				}))
+				:area(
+					ui.Rect { x = x, y = math.max(0, y), w = ya.clamp(0, self._area.w - x, 1), h = math.min(1, self._area.h) }
+				)
 				:symbol(c)
 		end
 
 		local c = self._chunks
 		self._chunks = {
 			c[1]:pad(ui.Pad.y(1)),
-			c[2]:pad(ui.Pad(1, c[3].w > 0 and 0 or 1, 1, c[1].w > 0 and 0 or 1)),
+			-- TODO: remove this compatibility hack
+			fs.unique and c[2]:pad(ui.Pad.y(1)) or c[2]:pad(ui.Pad(1, c[3].w > 0 and 0 or 1, 1, c[1].w > 0 and 0 or 1)),
 			c[3]:pad(ui.Pad.y(1)),
 		}
 

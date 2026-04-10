@@ -111,7 +111,6 @@ spotters = [
 	{ mime = "text/*", run = "code" },
 	{ mime = "application/{mbox,javascript,wine-extension-ini}", run = "code" },
 	# Image
-	{ mime = "image/{avif,hei?,jxl}", run = "magick" },
 	{ mime = "image/svg+xml", run = "svg" },
 	{ mime = "image/*", run = "image" },
 	# Video
@@ -125,7 +124,6 @@ spotters = [
 ]
 preloaders = [
 	# Image
-	{ mime = "image/{avif,hei?,jxl}", run = "magick" },
 	{ mime = "image/svg+xml", run = "svg" },
 	{ mime = "image/*", run = "image" },
 	# Video
@@ -144,7 +142,6 @@ previewers = [
 	# JSON
 	{ mime = "application/{json,ndjson}", run = "json" },
 	# Image
-	{ mime = "image/{avif,hei?,jxl}", run = "magick" },
 	{ mime = "image/svg+xml", run = "svg" },
 	{ mime = "image/*", run = "image" },
 	# Video
@@ -174,16 +171,18 @@ previewers = [
 
 prepend_preloaders = [
   # 3d objects
-  { name = "*.3mf", run = "f3d-preview" },
-  { name = "*.obj", run = "f3d-preview" },
-  { name = "*.pts", run = "f3d-preview" },
-  { name = "*.ply", run = "f3d-preview" },
-  { name = "*.stl", run = "f3d-preview" },
-  { name = "*.step", run = "f3d-preview" },
-  { name = "*.stp", run = "f3d-preview" },
+  { url = "*.{3mf,obj,pts,ply,stl,step,stp}", run="f3d-preview"},
+  # Office Documents
+  { mime = "application/openxmlformats-officedocument.*", run = "office" },
+  { mime = "application/oasis.opendocument.*", run = "office" },
+  { mime = "application/ms-*", run = "office" },
+  { mime = "application/msword", run = "office" },
+  { name = "*.docx", run = "office" },
 ]
 
 prepend_previewers = [
+  # 3d objects
+{ url = "*.{3mf,obj,pts,ply,stl,step,stp}", run="f3d-preview"},	#  { name = "*.stl", run = "thumbnail" },
 	# Archive previewer
 	{ mime = "application/zip",            run = "ouch" },
 	{ mime = "application/*zip",            run = "ouch" },
@@ -192,17 +191,11 @@ prepend_previewers = [
 	{ mime = "application/x-7z-compressed", run = "ouch" },
 	{ mime = "application/x-rar",           run = "ouch" },
 	{ mime = "application/x-xz",            run = "ouch" },
-	# Open office documents
-	{ mime = "application/vnd.oasis.opendocument.spreadsheet", run = "odt" },
-	# 3d objects
-  { name = "*.3mf", run = "f3d-preview" },
-  { name = "*.obj", run = "f3d-preview" },
-  { name = "*.pts", run = "f3d-preview" },
-  { name = "*.ply", run = "f3d-preview" },
-  { name = "*.stl", run = "f3d-preview" },
-  { name = "*.step", run = "f3d-preview" },
-  { name = "*.stp", run = "f3d-preview" },
-	#  { name = "*.stl", run = "thumbnail" },
+	# Office Documents
+  { mime = "application/openxmlformats-officedocument.*", run = "office" },
+  { mime = "application/oasis.opendocument.*", run = "office" },
+  { mime = "application/ms-*", run = "office" },
+  { mime = "application/msword", run = "office" },
 	# { name = "*.step", run = "thumbnail" },
 ]
 

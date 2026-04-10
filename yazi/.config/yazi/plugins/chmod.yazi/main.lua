@@ -1,3 +1,5 @@
+--- @since 26.1.22
+
 local selected_or_hovered = ya.sync(function()
 	local tab, paths = cx.active, {}
 	for _, u in pairs(tab.selected) do
@@ -9,35 +11,37 @@ local selected_or_hovered = ya.sync(function()
 	return paths
 end)
 
+local function fail(s, ...)
+	ya.notify {
+		title = "Chmod",
+		content = string.format(s, ...),
+		level = "error",
+		timeout = 5,
+	}
+end
+
 return {
 	entry = function()
-		ya.manager_emit("escape", { visual = true })
+		ya.emit("escape", { visual = true })
 
-		ya.dbg("Hello", "World!")
 		local urls = selected_or_hovered()
 		if #urls == 0 then
-			return ya.notify({ title = "Chmod", content = "No file selected", level = "warn", timeout = 5 })
+			return ya.notify { title = "Chmod", content = "No file selected", level = "warn", timeout = 5 }
 		end
 
-		local value, event = ya.input({
+		local value, event = ya.input {
 			title = "Chmod:",
-			position = { "top-center", y = 3, w = 40 },
-		})
+			pos = { "top-center", y = 3, w = 40 },
+		}
 		if event ~= 1 then
 			return
 		end
 
-		local status, err = Command("chmod"):arg(value):arg(urls):spawn():wait()
-		if not status or not status.success then
-			ya.notify({
-				title = "Chmod",
-				content = string.format(
-					"Chmod with selected files failed, exit code %s",
-					status and status.code or err
-				),
-				level = "error",
-				timeout = 5,
-			})
+		local output, err = Command("chmod"):arg(value):arg(urls):output()
+		if not output then
+			fail("Failed to run chmod: %s", err)
+		elseif not output.status.success then
+			fail("Chmod failed with stderr:\n%s", output.stderr:gsub("^chmod:%s*", ""))
 		end
 	end,
 }

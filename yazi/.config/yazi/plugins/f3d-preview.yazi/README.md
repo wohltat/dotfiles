@@ -2,6 +2,8 @@
 
 Yazi previewer which uses f3d to render 3d object files like: step, stl, obj, 3mf, ply and many more.
 
+![screenshot](img/screenshot.png)
+
 ## Requirements
 
 - f3d
@@ -9,34 +11,34 @@ Yazi previewer which uses f3d to render 3d object files like: step, stl, obj, 3m
 ## Installation
 
 ```
-ya pkg install "ruudjhuu/f3d-preview"
+ya pkg add "ruudjhuu/f3d-preview"
 ```
 
 ## Configuration
 
-Add the follwing to your `yazi.toml`
+Add the following to your `yazi.toml`
 
 ```
-
+[plugin]
 prepend_preloaders = [
   # 3d objects
-  { name = "*.3mf", run = "f3d-preview" },
-  { name = "*.obj", run = "f3d-preview" },
-  { name = "*.pts", run = "f3d-preview" },
-  { name = "*.ply", run = "f3d-preview" },
-  { name = "*.stl", run = "f3d-preview" },
-  { name = "*.step", run = "f3d-preview" },
-  { name = "*.stp", run = "f3d-preview" },
+  { url = "*.{3mf,obj,pts,ply,stl,step,stp}", run="f3d-preview"},
 ]
 
 prepend_previewers = [
   # 3d objects
-  { name = "*.3mf", run = "f3d-preview" },
-  { name = "*.obj", run = "f3d-preview" },
-  { name = "*.pts", run = "f3d-preview" },
-  { name = "*.ply", run = "f3d-preview" },
-  { name = "*.stl", run = "f3d-preview" },
-  { name = "*.step", run = "f3d-preview" },
-  { name = "*.stp", run = "f3d-preview" },
+  { url = "*.{3mf,obj,pts,ply,stl,step,stp}", run="f3d-preview"},
 ]
+```
+
+Or alternative toml syntax:
+
+```
+[[plugin.prepend_previewers]]
+url = "*.{3mf,obj,pts,ply,stl,step,stp}"
+run = "f3d-preview"
+
+[[plugin.prepend_preloaders]]
+url = "*.{3mf,obj,pts,ply,stl,step,stp}"
+run = "f3d-preview"
 ```

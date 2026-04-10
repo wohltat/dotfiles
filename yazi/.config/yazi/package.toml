@@ -9,14 +9,29 @@ rev = "202e450"
 hash = "9e2f6f7381542d3adb3080b394b431b4"
 
 [[plugin.deps]]
-use = "Ape/reflink"
-rev = "34902d3"
-hash = "f0c718e6cfb12f292af6a027a86713c2"
+use = "yazi-rs/plugins:chmod"
+rev = "7749958"
+hash = "f0c8c378184d5f8abd1b095a443d336d"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "7749958"
+hash = "6fa6a05a81c98dd000fbca3cca6e9682"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "7749958"
+hash = "187cc58ba7ac3befd49c342129e6f1b6"
+
+[[plugin.deps]]
+use = "macydnah/office"
+rev = "41ebef8"
+hash = "5805affd3ae8adcb3c72b6997d21c0a6"
 
 [[plugin.deps]]
 use = "ruudjhuu/f3d-preview"
-rev = "f498e1b"
-hash = "93dc2231626ba213c30b9a6d48a776b2"
+rev = "76d115d"
+hash = "6b2008327d65fe374d99f6b6ff007cba"
 
 [flavor]
 deps = []
