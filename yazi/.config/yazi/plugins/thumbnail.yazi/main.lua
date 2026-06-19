@@ -17,7 +17,7 @@ function M:peek(job)
 
 	if thumbnail_path ~= "" then
 		ya.image_show(Url(thumbnail_path), job.area)
-		ya.preview_widgets(job, {})
+		-- ya.preview_widgets(job, {})
 	end
 end
 

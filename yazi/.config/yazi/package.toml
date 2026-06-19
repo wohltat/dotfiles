@@ -14,11 +14,6 @@ rev = "7749958"
 hash = "f0c8c378184d5f8abd1b095a443d336d"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:full-border"
-rev = "7749958"
-hash = "6fa6a05a81c98dd000fbca3cca6e9682"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
 rev = "7749958"
 hash = "187cc58ba7ac3befd49c342129e6f1b6"
@@ -32,6 +27,11 @@ hash = "5805affd3ae8adcb3c72b6997d21c0a6"
 use = "ruudjhuu/f3d-preview"
 rev = "76d115d"
 hash = "6b2008327d65fe374d99f6b6ff007cba"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "c2c16c8"
+hash = "7b625412411be411153886894d9acaf"
 
 [flavor]
 deps = []

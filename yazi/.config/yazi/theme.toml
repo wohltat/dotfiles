@@ -1,6 +1,6 @@
 # A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
-"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
+#:schema https://yazi-rs.github.io/schemas/theme.json
 
 # vim:fileencoding=utf-8:foldmethod=marker
 
@@ -166,7 +166,7 @@ icon_error = ""
 
 # : File-specific styles {{{
 
-[filetype]
+[manager.file_rules]
 
 rules = [
 	# Images
@@ -186,17 +186,17 @@ rules = [
 	# { mime = "inode/x-empty", fg = "red" },
 
 	# Special files
-	{ name = "*", is = "orphan", bg = "red" },
-	{ name = "*", is = "exec"  , fg = "green" },
+	{ url = "*", is = "orphan", bg = "red" },
+	{ url = "*", is = "exec"  , fg = "green" },
 
 	# Dummy files
-	{ name = "*", is = "dummy", bg = "red" },
-	{ name = "*/", is = "dummy", bg = "red" },
+	{ url = "*", is = "dummy", bg = "red" },
+	{ url = "*/", is = "dummy", bg = "red" },
 
 	# Fallback
-	# { name = "*", fg = "white" },
-	# { name = "*/", fg = "blue" }
-	{ name = "*/", fg = "#9999ff" }
+	# { url = "*", fg = "white" },
+	# { url = "*/", fg = "blue" }
+	{ url = "*/", fg = "#9999ff" }
 ]
 
 [icon]
